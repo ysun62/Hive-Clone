@@ -4,6 +4,7 @@ import Header from "./components/header/Header";
 import Video from "./components/video/Video";
 import About from "./components/about/About";
 import FeaturedCustomers from "./components/featuredCustomers/FeaturedCustomers";
+import OurPlatform from "./components/ourPlatform/OurPlatform";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Video />
       <About />
       <FeaturedCustomers />
+      <OurPlatform />
     </div>
   );
 }

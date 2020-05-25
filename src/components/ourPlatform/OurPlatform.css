@@ -1,0 +1,143 @@
+.platform-wrapper {
+  width: 100%;
+  position: relative;
+  background-color: white;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.platform-wrapper h3 {
+  color: rgb(74, 74, 74);
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.266rem;
+}
+
+.platform-wrapper h6 {
+  margin-top: 12px;
+  color: rgb(74, 74, 74);
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+}
+
+.platform-content {
+  position: relative;
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+}
+
+.platform-content h6 {
+  margin: 30px 0 15px;
+  display: flex;
+  min-height: 50px;
+  align-items: center;
+  line-height: 22px;
+  justify-content: center;
+}
+
+.platform-content div {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 500px;
+}
+
+.platform-content p {
+  width: 300px;
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.375rem;
+  color: rgb(123, 123, 123);
+}
+
+.platform-content .line {
+  top: 210px;
+  left: 15%;
+  width: 70%;
+  height: 1px;
+  margin: 0 auto;
+  z-index: 0;
+  position: absolute;
+  border-bottom: dashed 2px #4a90e2;
+}
+
+.half-circle {
+  width: 200px;
+  height: 100px; /* as the half of the width */
+  border-top-left-radius: 350px;
+  border-bottom-left-radius: 350px;
+  border: 2px dashed #4a90e2;
+  border-right: 0;
+  position: absolute;
+  top: 17%;
+  left: 10%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  visibility: hidden;
+}
+
+.half-circle-second {
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  border-top-right-radius: 350px;
+  border-bottom-right-radius: 350px;
+  border: 2px dashed #4a90e2;
+  border-left: 0;
+  bottom: 17%;
+  right: 10%;
+  visibility: hidden;
+}
+
+.platform-background {
+  opacity: 0.5;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjRweCIgaGVpZ2h0PSIxNnB4IiB2aWV3Qm94PSIwIDAgMjQgMTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDU0LjEgKDc2NDkwKSAtIGh0dHBzOi8vc2tldGNoYXBwLmNvbSAtLT4KICAgIDx0aXRsZT5SZWN0YW5nbGU8L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZGVmcz4KICAgICAgICA8cmVjdCBpZD0icGF0aC0xIiB4PSI4NiIgeT0iMzg2MCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjE2Ij48L3JlY3Q+CiAgICAgICAgPHBhdHRlcm4gaWQ9InBhdHRlcm4tMiIgd2lkdGg9IjcuNzY2NjIyNTIiIGhlaWdodD0iNy43NjY2MjI1MiIgeD0iNzguMjMzMzc3NSIgeT0iMzg1Mi4yMzMzOCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgICAgICAgIDx1c2UgeGxpbms6aHJlZj0iI2ltYWdlLTMiIHRyYW5zZm9ybT0ic2NhbGUoMC4xNjE4MDQ2MzYsMC4xNjE4MDQ2MzYpIj48L3VzZT4KICAgICAgICA8L3BhdHRlcm4+CiAgICAgICAgPGltYWdlIGlkPSJpbWFnZS0zIiB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBREFBQUFBd0NBWUFBQUJYQXZtSEFBQUVHV2xEUTFCclEwZERiMnh2Y2xOd1lXTmxSMlZ1WlhKcFkxSkhRZ0FBT0kyTlZWMW9IRlVVUHJ0elp5TWt6bE5zTklWMHFEOE5KUTJUVmpTaHRMcC8zZDAyYnBaSk50b2k2R1QyN3M2WXljNDRNN3Y5b1U5RlVId3g2cHNVeEwrM2dDQW85US9iUHJRdmxRb2wydFFnS0Q2MCtJTlE2SXVtNjVrN001bHB1ckhlWmU1ODg1M3ZubnZ1dVdmdkJlaTVxbGlXa1JRQkZwcXVMUmN5NG5PSGo0ZzlLNUNFaDZBWEJxRlhVUjByWGFsTUFqWlBDM2UxVzk5RHdudGYyZFhkL3ArdHQwWWRGU0J4SDJLejVxZ0xpSThCOEtkVnkzWUJldnFSSHovcVdoNzJZdWkzTVVERUwzcTQ0V1BYdzNNK2ZvMXBadVFzNHRPSUJWVlRhb2lYRUkvTXhmaEdEUHN4c05aZm9FMXE2NnJvNWFKaW0zWGRvTEZ3NzJIK24yM0JhSVh6YmNPbno1bWZQb1R2WVZ6N0t6VWw1K0ZSeEV1cWtwOUcvQWppYTIxOXRoemcyNWFia1JFL0JwRGMzcHF2cGhIdlJGeXMyd2VxdnAra3JiV0tJWDduaERiekxPSXRpTTgzNThwVHdkaXJxcFBGbk1GMnhMYzFXdkx5T3dUQWlicGJtdkhIY3Z0dFU1N3k1K1hxTlpyTGUzbEUvUHE4ZVVqMmZYS2ZPZTNwZk9qemhKWXRCL3lsbDVTREZjU0RpSCtoUmtIMjUrTCtzZHhLRUFNWmFocmxTWDh1a3FNT1d5L2pYVzJtNk05TERCYzMxQjlMRnV2NmdWS2cvMFN6aTNLQXIxa0dxMUdNalUvYUxibnE2L2xSeGM0WGZKOThoVGFyZ1grK0RiTUpCU2lZTUllOUNrMVlBeEZrS0VBRzN4YllhS21ERGdZeUZLMFVHWXBmb1dZWEcrZkFQUEk2dEpuTndiN0NsUDdJeUYrRCtiak90Q3BraHo2Q0ZySWEvSTZzRnRObDhhdUZYR01UUDM0c053SS9KaGtnRXRtRHoxNHlTZmFSY1RJQklubUtQRTMya3h5eUUyVHYrdGhLYkVWZVBEZlcvYnlNTTFLbW0wWGRPYlM3b0dEL015cE1YRlBYckN3T3RvWWp5eW43QlYyOS9NWmZzVnpwTERkUnR1SVpuYnBYenZsZitldjhNdllyL0dxazRIL2tWL0czY3NkYXpMdXlUTVBzYkZoemQxVWFiUWJqRnZEUm1jV0p4UjN6Y2ZIa1Z3OUdmcGJKbWVldjlGMDhXVzh1RGthc2x3WDZhdmxXR1U2TlJLejBnL1NIdEN5OUozMG8vY2E5elgzS2ZjMTl6bjNCWFFLUk84dWQ0NzdoTG5BZmMxL0c5bXJ6R2xyZmV4WjVHTGRuNlpacnJFb2hJMndWSGhaeXdqYmhVV0V5OGljTUNHTkNVZGlCbHEzcit4YWZMNTQ5SFE1akgrYW4rMXkrTGxZQmlmdXhBdlJOL2xWVlZPbHdsQ2tkVm05Tk9MNUJFNHdrUTJTTWxEWlU5N2hYODZFaWxVL2xVbWtRVXp0VEU2bXgxRUVQaDdPbWRxQnRBdnY4SGRXcGJySlM2dEpqM24wQ1dkTTZidXNOelJWM1M5S1RZaHF2TmlxV211cm9pS2dZaHNoTWptaFRoOXB0V2hzRjc5NzBqL1NiTXJzUEUxc3VSNXo3RE1DK1AvSHMreTdpanJRQWxoeUFnY2NqYmhqUHlnZmVCVGp6aE5xeTI4RWRrVWg4QytEVTkrejJ2L295ZUg3OTFPbmN4SE9zNXkyQXRUYzduYi9mNzNUV1BrRC9xd0Jualg4Qm9KOThWUU5jQys4QUFBREJTVVJCVkdnRjdaZEJEb0FnREFTSjhWbitYditsY0tnaEhnZ0lQV3d6SkFRVldOc3BCVTJKMGlSdzVONVMzY3JtcG93d0JKWVFJQWVXWUVSRW1BQTVJQnc4VEY5Q2dCeFlnaEVSWVFKWHR2MFV0ai9kMmZoUzNZcjhEdzBPdUsyTlR1RXdFZmllbUtQM1phZXhoSzFiNDFnL3MrdDZkeHA5M3p0ZVBnSkd5S3MxMmw3NlNUNENPT0MyTmpxRjVTT3dkenI2ZDFqNW1LTkFZSUxBZTJKT2FEU255aWR4MHpzNkF4QWdCd0lFRVJlbUNKQURVL2lZSElBQU9SQWdpRzBYSHRpMUdXeWhzVVg2QUFBQUFFbEZUa1N1UW1DQyI+PC9pbWFnZT4KICAgIDwvZGVmcz4KICAgIDxnIGlkPSJQYWdlLTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIG9wYWNpdHk9IjAuNSI+CiAgICAgICAgPGcgaWQ9IkFib3V0LVVzIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtODYuMDAwMDAwLCAtMzg2MC4wMDAwMDApIj4KICAgICAgICAgICAgPGcgaWQ9IlJlY3RhbmdsZSI+CiAgICAgICAgICAgICAgICA8dXNlIGZpbGw9InVybCgjcGF0dGVybi0yKSIgeGxpbms6aHJlZj0iI3BhdGgtMSI+PC91c2U+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==)
+    0% 0% / 23px white;
+  position: absolute;
+  height: 40px;
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+}
+
+@media screen and (max-width: 992px) {
+  .platform-content .line {
+    display: none;
+  }
+  .platform-content {
+    flex-direction: column;
+  }
+  .platform-content h6 {
+    margin: 10px 0 0;
+  }
+  .platform-content div {
+    height: 430px;
+  }
+  .platform-content div:nth-child(2) {
+    margin-top: 30px;
+  }
+  .half-circle,
+  .half-circle-second {
+    visibility: visible;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .half-circle {
+    left: 0;
+  }
+  .half-circle-second {
+    right: 0;
+  }
+}
