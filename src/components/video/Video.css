@@ -1,0 +1,36 @@
+.video-wrapper {
+  margin-top: -30px;
+  width: 100%;
+  height: 730px;
+  overflow: hidden;
+  position: relative;
+}
+
+.text-wrapper {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.text-wrapper img {
+  padding-bottom: 50px;
+}
+
+.text-wrapper h2 {
+  color: white;
+  font-size: 2.625rem;
+  font-weight: 300;
+  line-height: 3.40357rem;
+  margin-left: -0.02rem;
+  letter-spacing: -0.02rem;
+}

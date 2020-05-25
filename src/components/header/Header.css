@@ -1,0 +1,147 @@
+.wrapper {
+  /* height: 60px; */
+}
+
+.nav {
+  z-index: 1000;
+}
+
+.nav-color {
+  background: white;
+  height: 60px;
+  padding: 0 230px;
+}
+
+.link-div {
+  margin-left: 60px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.375rem;
+  margin-right: auto;
+  color: rgb(123, 123, 123);
+}
+
+.link {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0 10px;
+  position: relative;
+}
+
+.link::before {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  height: 5px;
+  content: "";
+  background-color: #4a90e2;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+  -webkit-transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+}
+
+.link:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.demo {
+  color: #047be8;
+  text-decoration: none;
+}
+
+.demo-btn {
+  background-color: rgb(240, 247, 255);
+  border: 0px;
+  color: rgb(74, 144, 226);
+  box-shadow: none;
+  font-size: 0.875rem;
+  padding: 12.5px 12.5px;
+  border-radius: 1.25rem;
+}
+
+.demo-btn-text {
+  width: 100%;
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+}
+
+.demo-btn-span {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  overflow: hidden;
+  position: absolute;
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+.signup {
+  display: flex;
+  align-items: center;
+}
+
+.login {
+  margin-left: 10px;
+}
+
+.login-btn {
+  background-color: rgb(74, 144, 226);
+  border: 0px;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.21) 0px 2px 5px 0px;
+  font-size: 0.75rem;
+  padding: 14px 30px;
+  border-radius: 1.375rem;
+}
+
+@media screen and (max-width: 1400px) {
+  .nav-color {
+    padding: 0 80px;
+  }
+  .link-div {
+    margin-left: 25px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .flex-col-jc-ai-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-color {
+    height: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .link-div,
+  .link,
+  .login {
+    margin: 0;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-color {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .nav-color {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
