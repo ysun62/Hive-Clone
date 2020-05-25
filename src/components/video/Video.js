@@ -16,10 +16,10 @@ export default function Video() {
           width: "auto",
           height: "auto",
           position: "absolute",
-          left: "0",
-          right: "0",
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%,-50%)",
           zIndex: "-5",
-          top: "0",
         }}
       >
         <source src="https://thehive.ai/images/dac47bb.mp4" type="video/mp4" />
