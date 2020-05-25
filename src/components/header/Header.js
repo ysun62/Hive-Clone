@@ -20,10 +20,7 @@ export default function Header() {
         />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-      <Navbar.Collapse
-        id="responsive-navbar-nav"
-        className="flex-col-jc-ai-center"
-      >
+      <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="link-div flex-col-jc-ai-center">
           <Nav.Link href="#home" className="link">
             Home

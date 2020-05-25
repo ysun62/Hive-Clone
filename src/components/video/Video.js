@@ -5,7 +5,7 @@ export default function Video() {
   return (
     <div className="video-wrapper">
       <video
-        autoplay="autoplay"
+        autoPlay="autoplay"
         loop="loop"
         preload="metadata"
         className="video"

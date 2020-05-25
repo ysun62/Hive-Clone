@@ -5,7 +5,9 @@ export default function OurPlatform() {
   return (
     <div className="platform-wrapper">
       <h3>Our Platform</h3>
-      <h6>Hive has developed the industry’s first full-stack AI platform.</h6>
+      <h6 className="platform-desc">
+        Hive has developed the industry’s first full-stack AI platform.
+      </h6>
       <div className="platform-content">
         <div>
           <img

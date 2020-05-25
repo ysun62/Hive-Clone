@@ -17,7 +17,7 @@
   line-height: 2.266rem;
 }
 
-.platform-wrapper h6 {
+.platform-desc {
   margin-top: 12px;
   color: rgb(74, 74, 74);
   font-size: 1.25rem;
@@ -35,6 +35,7 @@
 }
 
 .platform-content h6 {
+  font-size: 1.1rem;
   margin: 30px 0 15px;
   display: flex;
   min-height: 50px;
@@ -133,11 +134,18 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
+  .platform-content p,
+  .platform-content h6,
+  .platform-desc {
+    width: 90%;
+  }
   .half-circle {
-    left: 0;
+    width: 100px;
+    left: -10px;
   }
   .half-circle-second {
-    right: 0;
+    width: 100px;
+    right: -10px;
   }
 }
